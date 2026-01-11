@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+#container {
+  display: grid;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-bottom: 100px;
+}
+
+#container h1 {
+  background-color: skyblue;
+  text-align: center;
+  font-size: 2em;
+  margin: 10px 0 30px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 50px;
+}
+
+.food {
+  border-radius: 8px;
+  padding: 10px;
+  /* height: 500px; */
+  box-shadow: 0 0 10px rgb(239, 233, 233);
+  cursor: pointer;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+.food:hover {
+  box-shadow: 0 0 10px rgb(75, 74, 74);
+  background-color: rgba(153, 171, 245, 0.169);
+}
+
+.food img {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+}
+
+span {
+  display: block;
+}
+
+.food-content {
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.food-content h3 {
+  text-transform: capitalize;
+  margin: 10px 0 10px;
+  font-size: 1.25em;
+  font-weight: bold
+}
+
+.food-content p {
+  margin: ;
+}
+
+.food-content :nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px;
+
+}
+
+.food-content :nth-child(3) {
+  color: #444;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.button {
+
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+}
+
+.btn {
+  border: none;
+  background-color: black;
+  color: white;
+  will-change: transform;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 11px 30px 0 rgba(0, 0, 0, 0.663);
+}
+
+/* ~~~~~~~~~~media query~~~~~~~ */
+/*  for small device */
+@media screen and (max-width: 992px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
