@@ -159,11 +159,14 @@ span {
   }
 
   .button {
-
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-
+  }
+  .btn{
+    font-size: 18px;
+      font-weight: 600;
+      padding: 8px 18px;
   }
 }
 
@@ -172,5 +175,47 @@ span {
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
-}
 
+  .food-content h3 {
+    text-transform: capitalize;
+    margin: 7px 0 7px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .food-content p {
+    margin: ;
+  }
+
+  .food-content :nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+  }
+
+  .food-content :nth-child(3) {
+    color: #444;
+    margin-bottom: 7px;
+    font-size: 12px;
+  }
+
+  .button {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 6px 0;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 16px;
+
+  }
+
+  #container h1 {
+    font-size: 1.25em;
+    margin: 10px 0 20px;
+    border-radius: 6px;
+    padding: 8px;
+  }
+}
